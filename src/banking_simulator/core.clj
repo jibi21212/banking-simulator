@@ -1,5 +1,8 @@
 (ns banking-simulator.core
-  (:gen-class))
+  (:gen-class)
+  (require [banking-simulator.bank :as bank]
+           [banking-simulator.account :as account]
+           [banking-simulator.audit :as audit]))
 
 (defn -main
   "The main function which gets everything goin"
