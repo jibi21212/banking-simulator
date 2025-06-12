@@ -21,5 +21,9 @@
 
 (defn transfer [from-id to-id amount]
   (dosync
-   ;; Transfer logic + Audit logic
+   ; Transfer logic + Audit logic:
+   ; I assume to complete a transaction:
+   ; I have to withdraw amount from from-id 
+   ; Deposit amount into to-id
+   ; Log that that amount has successfully transferred from-id to to-id
    ))
